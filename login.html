@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<head>
+    <title>
+        Log In | Techcenter
+    </title>
+    
+    <link rel="shortcut icon" type="image/png" href="fav.png"/>
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+    <div class = "container">
+    <div class="left">
+        
+        <img src="logo1.png" alt="tech center logo">
+    </div>
+    <div class="main">
+        <h1>Log In</h1>
+        <small id="invalid"></small>
+        <form action="logininfo.php" method="post">
+            <h4>Username/Email:*</h4>
+                <input type="email" name="email" id="email">
+                <small class = "reminder" id = "emailrem"></small>
+            <h4>Password:*</h4>
+                <input type="password" name="pswd" id="pswd">
+                <p class = "reminder" id = "pswdrem"></p>
+                <h4><button type="submit" class = "button">Log In</button></h4>
+        </form>
+    </div>
+</div>
+<div class="footer">
+    <h6>&copy; Copyright, Group Project 1, March 2021</h6>
+</div>
+<script>
+    if ((window.location.search).length > 0){
+        document.getElementById("invalid").innerText = "Invalid credentials. Try again.";
+    }
+</script>
+</body>
+</html>

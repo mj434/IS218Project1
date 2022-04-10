@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>
+        Sign Up | Techcenter
+    </title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" type="image/png" href="fav.png" />
+    <link rel="stylesheet" href="main.css" />
+</head>
+<body>
+    <div class = "container">
+    <div class="left">
+        
+        <img src="logo1.png" alt="tech center logo">
+    </div>
+    <div class="main">
+        <h1>Create an account</h1>
+        <form onsubmit="validate(this, event)" action="info.php" method="post">
+            <h4>First Name:*</h4>
+                <input type="text" name="fname" id="fname" placeholder="Enter your first name" required>
+                <small id="fname-rem"></small>
+            <h4>Last Name:*</h4>
+                <input type="text" name="lname" id="lname" placeholder="Enter your last name" required>
+                <small id="lname-rem"></small>
+            
+            <h4>E-mail:*</h4>
+                <input type="email" name="email" id="email" placeholder="Enter your email" required>
+                <small id="email-rem"></small>
+            <h4>Password:*</h4>
+                <input type="password" name="pswd" id="pswd" placeholder="Enter a password" required>
+                <small id="pswd-rem"></small>
+            <h4>Confirm Password:*</h4>
+                <input type="password" name="cpswd" id="cpswd" palceholder="Confirm your password" required>
+                <small id="cpswd-rem"></small>
+            <h4>College:</h4>
+                <input type="radio" name="college" value="njit" checked>New Jersey Institute of Technology<br>
+                <input type="radio" name="college" value="ru">Rutgers University<br>
+                <input type="radio" name="college" value="ecc">Essex County College<br>
+                <input type="radio" name="college" value="cu">Caldwell University
+            <h4>Major:</h4>
+                <input type="checkbox" name="major[]" value="it">Information Technology<br>
+                <input type="checkbox" name="major[]" value="cs">Computer Science<br>
+                <input type="checkbox" name="major[]" value="fn">Finance<br>
+                <input type="checkbox" name="major[]" value="ph">Physics<br>          
+            <h4>Agree and Continue:<br><button type="submit" class="button">Sign Up</button><input type="reset" value="Reset"></h4>
+        </form>
+    </div>
+    </div>
+    <div class="footer">
+        <h6>&copy; Copyright, Group Project 1, March 2021</h6>
+    </div>
+    <script src="validate.js"></script>
+</body>
+</html>

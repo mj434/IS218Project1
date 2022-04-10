@@ -1,0 +1,127 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Georgia, 'Times New Roman', Times, sans-serif;
+    
+}
+
+.container {
+    display: flex;
+    background-image: url("background.jpg");
+    justify-content: center;
+    min-height: 100vh;
+    padding-bottom: 3em;
+}
+
+/*header styles*/
+.left {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-color: rgba(255, 255, 255, 0.86);
+    width: 45%; 
+    
+}
+
+
+/*body styles*/
+.main {
+
+    color: white;
+    min-height: 100%;
+    width: 55%;
+    padding: 2em;
+    
+    
+    
+}
+small {
+    color: red;
+    display: block;
+    text-align: center;
+}
+.main h1 {
+    text-decoration: underline;
+    padding-bottom: 1em;
+    text-align: center;
+}
+.main h4 {
+    padding-top: 1em;
+    font-size: larger;
+    
+}
+a {
+    align-self: center;
+    display: block;
+    align-items: center;
+}
+form{
+    max-width: 480px;
+    margin: 0 auto;
+}
+input[type=text], input[type=email], input[type=password]{
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+input[type=number] {
+    width: 69%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+select {
+    width: 29%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+.button{
+    border: none;
+    padding: 16px 32px;
+    text-decoration: none;
+    margin: 4px 2px;
+    cursor: pointer;
+    width: 40%;
+    background-color: green;
+    color: white;
+    
+}
+input[type=reset] {
+    border: none;
+    padding: 16px 32px;
+    text-decoration: none;
+    margin: 4px 2px;
+    cursor: pointer;
+    width: 40%;
+    background-color: red;
+    color: white;
+}
+input[type=radio], input[type=checkbox] {
+    cursor: pointer;
+    padding-left: 1em;
+}
+
+
+
+/*footer styles*/
+.footer {
+    text-align: center;
+    padding: 1em;
+    color: white;
+    background-image: linear-gradient(to bottom right, #31AFB4, #115571, #14212D);
+    position: fixed;
+    bottom: 0;
+    z-index: 50;
+    width: 100%;
+}
